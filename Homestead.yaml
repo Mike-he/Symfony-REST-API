@@ -1,0 +1,37 @@
+---
+ip: "192.168.10.20"
+memory: 2048
+cpus: 1
+hostname: symfony-rest-api
+name: symfony-rest-api
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: "/Users/mike/Documents/workspace/Symfony-REST-API"
+      to: "/home/vagrant/symfony-rest-api"
+      type: "nfs"
+
+sites:
+    - map: homestead.app
+      to: "/home/vagrant/symfony-rest-api/public"
+
+databases:
+    - symfony
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp

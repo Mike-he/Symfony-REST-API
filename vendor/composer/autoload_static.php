@@ -52,6 +52,10 @@ class ComposerStaticInit96a8aa4dc83ac6b09b07d6e039c4b5cd
         array (
             'Monolog\\' => 8,
         ),
+        'L' => 
+        array (
+            'Laravel\\Homestead\\' => 18,
+        ),
         'I' => 
         array (
             'Incenteev\\ParameterHandler\\' => 27,
@@ -154,6 +158,10 @@ class ComposerStaticInit96a8aa4dc83ac6b09b07d6e039c4b5cd
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Laravel\\Homestead\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/homestead/src',
         ),
         'Incenteev\\ParameterHandler\\' => 
         array (

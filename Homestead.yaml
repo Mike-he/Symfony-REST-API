@@ -18,7 +18,8 @@ folders:
 
 sites:
     - map: homestead.app
-      to: "/home/vagrant/symfony-rest-api/public"
+      to: "/home/vagrant/symfony-rest-api/web"
+      type: symfony
 
 databases:
     - symfony
